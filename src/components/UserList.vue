@@ -1,10 +1,12 @@
-<script setup>
-defineProps({
+<script setup lang="ts">
+import type { User } from '../types/message';
+
+const props = defineProps({
   users: {
-    type: Array,
-    default: () => []
+    type: Array as () => User[],
+    required: true
   }
-})
+});
 </script>
 
 <template>

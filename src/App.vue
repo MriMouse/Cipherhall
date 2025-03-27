@@ -1,14 +1,20 @@
-<script setup>
+<script setup lang="ts">
 import { RouterView } from 'vue-router';
 </script>
 
 <template>
-  <div class="app-container">
-    <header class="app-header">
-      <h1 class="app-title">密語軒 | Cipherhall</h1>
-      <p class="app-slogan">萬言無界 (Where words know no boundaries)</p>
+  <div class="min-h-screen bg-background">
+    <header class="border-b">
+      <div class="container mx-auto px-4 py-6">
+        <h1 class="text-4xl font-bold tracking-tight text-foreground">
+          密語軒 | Cipherhall
+        </h1>
+        <p class="mt-2 text-lg text-muted-foreground">
+          萬言無界 (Where words know no boundaries)
+        </p>
+      </div>
     </header>
-    <main class="app-content">
+    <main class="container mx-auto px-4 py-8">
       <RouterView />
     </main>
   </div>
